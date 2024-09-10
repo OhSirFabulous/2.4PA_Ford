@@ -5,6 +5,9 @@ firstName: String,
 lastName: String,
 email: String,
 username: String,
-password: String
+password: String,
+created:{type: Date,
+default:Date.now}
+
 });
 mongoose.model('User', UserSchema);
